@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swip_Favorid"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview_Favorid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/prg_favorid"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/favorid_lottie"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/progress_bar_water_fills_circle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_no_connection"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_rawRes="@raw/errorconnection"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"/>
+
+        <TextView
+            android:text="No Internet..."
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#535353"
+            android:textStyle="bold"
+            android:fontFamily="@font/iran_sans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

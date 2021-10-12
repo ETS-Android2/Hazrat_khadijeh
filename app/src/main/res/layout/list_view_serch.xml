@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/round_rcycler"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_list"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#282828"
+                android:fontFamily="@font/iran_sans"
+                android:gravity="center_vertical"
+                android:text="Title"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_list_discribtion"
+                android:text="Discribtion"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:textColor="#535353"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/iran_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
